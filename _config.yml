@@ -13,17 +13,18 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: MM
-email:
-description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+locale                   : "en-US"
+title                    : "ChrisLAM"
+title_separator          : "-"
+subtitle                 : A sad researcher.
+name                     : "ChrisLAM"
+description              : "a personal jekyll project"
 twitter_username: username
-github_username: username
-minimal_mistakes_skin: default
+github_username: fdq09eca
+minimal_mistakes_skin: dark
 search: true
-
+repository: fdq09eca/mm-github-pages-starter
+github: [metadata]
 # Build settings
 markdown: kramdown
 remote_theme: mmistakes/minimal-mistakes
@@ -39,14 +40,14 @@ include:
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
 
 # Plugins (previously gems:)
 plugins:
