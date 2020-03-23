@@ -104,6 +104,30 @@ defaults:
     values:
       layout: single
       author_profile: true
+  # _books
+  - scope:
+      path: "_books"
+      type: books
+    values:
+      layout: single
+      author_profile: true
+      share: true
+  # _recipes
+  - scope:
+      path: "_recipes"
+      type: recipes
+    values:
+      layout: single
+      author_profile: true
+      share: true
+  # _music
+  - scope:
+      path: "_music"
+      type: music
+    values:
+      layout: single
+      author_profile: true
+      share: true
 
 category_archive:
   type: liquid
@@ -123,3 +147,14 @@ compress_html:
   clippings: all
   ignore:
     envs: development # disable compression in dev environment
+
+collections:
+  music:
+    output: true
+    permalink: /:collection/:path/
+  recipes:
+    output: true
+    permalink: /:collection/:path/
+  books:
+    output: true
+    permalink: /:collection/:path/
