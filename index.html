@@ -1,7 +1,37 @@
 ---
-# You don't need to edit this file, it's empty on purpose.
-# Edit theme's home layout instead if you wanna make some changes
-# See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-layout: home
-author_profile: true
+layout: splash
+permalink: /
+header:
+  overlay_color: "#403e42"
+  overlay_image: /assets/images/index_hero.jpg
+  actions:
+    - label: "<i class='fas fa-download'></i> Chris's CV"
+      url: "/docs/quick-start-guide/"
+excerpt: >
+  A sad researcher wants a new career 😢.<br>
+feature_row:
+  - image_path: /assets/images/cooking.jpg
+    alt: "cooking"
+    title: "Recipes"
+    excerpt: "Recipe for daily home cooking."
+    url: "/recipes/"
+    btn_class: "btn--primary"
+    btn_label: "Learn more"
+  - image_path: "/assets/images/books.jpg"
+    alt: "books"
+    title: "Books"
+    excerpt: "Books I read."
+    url: "/books/"
+    btn_class: "btn--primary"
+    btn_label: "Learn more"
+  - image_path: "/assets/images/music.jpg"
+    alt: "Music"
+    title: "Music"
+    excerpt: "Music I play."
+    url: "/music/"
+    btn_class: "btn--primary"
+    btn_label: "Learn more"     
+  
 ---
+
+{% include feature_row %}
