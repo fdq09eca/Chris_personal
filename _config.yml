@@ -33,7 +33,7 @@ permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
 timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-teaser: https://source.unsplash.com/random/500x300
+# teaser: https://source.unsplash.com/random/500x300
 logo: https://source.unsplash.com/random/88x88
 # masthead_title: "Chris.L"
 include:
@@ -110,8 +110,11 @@ defaults:
       type: books
     values:
       layout: single
-      author_profile: true
+      author_profile: false
       share: true
+      header:
+        overlay_color: "#403e42"
+        overlay_image: /assets/images/books.jpg
   # _recipes
   - scope:
       path: "_recipes"
@@ -119,13 +122,14 @@ defaults:
     values:
       layout: single
       author_profile: true
+      math: true
       share: true
   # _music
   - scope:
       path: "_music"
       type: music
     values:
-      layout: single
+      layout: splash
       author_profile: true
       share: true
 
